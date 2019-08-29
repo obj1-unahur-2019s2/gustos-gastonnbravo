@@ -3,6 +3,7 @@ object rojo { method esFuerte() { return true } }
 object verde { method esFuerte() { return true }  }  // completar
 object celeste { method esFuerte() { return false } }  // completar
 object pardo { method esFuerte() { return false } }  // completar
+object naranja{method esFuerte(){return true}}
 
 /* materiales */
 object lino { method brilla() { return false } }
@@ -50,6 +51,45 @@ object placa{
 	method peso(pesoNuevo) { peso = pesoNuevo }
 	
 }
+object arito{
+	
+	method color(){return celeste}
+	method peso(){return 180}
+	
+}
+object banquito{
+	var color = naranja
+	
+	method color(color2){ color = color2}
+	method color(){return color}
+	method material(){return madera}
+	method peso(){return 1700}
+	
+}
+
+object cajita{
+	var objetoEnCaja
+	
+	
+	method color(){return rojo}
+	method material(){return cobre}
+	method agregarCajita(objetoNuevo){objetoEnCaja= objetoNuevo}
+//	method objetoTiene(){return objetoEnCaja }
+	method peso() {return objetoEnCaja.peso() + 400  }
+
+
+
+}
+
+/*
+>>> cajita.objetoTiene(pelota)
+>>> cajita.peso()
+* 
+* 
+>>> remera.peso()
+ */
+
+
 
 // agregar biblioteca y placa
 
